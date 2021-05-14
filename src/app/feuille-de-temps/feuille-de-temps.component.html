@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="feuille-de-temps.component.css">
+
+
+<!--tableau-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body >
+  <div class="container">
+    
+      <h1>Feuille de temps :</h1>
+      
+      <div class="navbar">
+     <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Gérer
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">Supprimer</a>
+    
+      </div>
+      </div>
+      <a href="#modifer">Modifier Feuille De Temps</a>
+      <a href="#cree">Crée des Feuille De Temps</a>
+      <a href="#transfert">Feuille De Temps de Transfert vers archive</a>	
+      
+    </div>
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+    
+    <ul class="nav nav-tabs">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Gérer</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Supprimer</a></li>
+          <li><hr class="dropdown-divider"></li>
+          
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Modifier Feuille De Temps</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Crée des Feuille De Temps</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Feuille De Temps de Transfert vers archive</a>
+      </li>
+    </ul>
+    
+              
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>N°</th>
+            <th>Date début</th>
+            <th>Date fin</th>
+            <th>N° ressource</th>
+            <th>Commentaire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>hhhhhh</td>
+              <td>hhhhhhhh</td>
+              <td>hhhhh</td>
+              <td>hhhhhhh</td>
+              <td>hhhhhhhh</td>
+            
+          </tr>
+          <tr>
+            <td>hhhhhhh</td>
+              <td>hhhhhhhhh</td>
+              <td>hhhhhhhhhh</td>
+              <td>hhhhhhhhhhhh</td>
+              <td>hhhhhhhh</td>
+          </tr>
+          <tr>
+            <td>hhhhhhhhhh</td>
+              <td>hhhhhhhh</td>
+              <td>hhhhhhhhhhh</td>
+              <td>hhhhhhhh</td>
+              <td>hhhhhhhh</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    </div>
+    </body>
+</html>
